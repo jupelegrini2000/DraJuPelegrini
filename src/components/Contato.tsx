@@ -53,7 +53,7 @@ export default function Contato() {
               {
                 icon: <Clock size={20} strokeWidth={1.5} className="text-principal" />,
                 label: "Horário de Atendimento",
-                value: "Seg a Sex: 08h às 18h | Sáb: 08h às 14h",
+                value: "Seg a Sex: 08h às 20h | Sáb: 08h às 14h",
                 href: null
               }
             ].map((item, index) => (
@@ -95,7 +95,7 @@ export default function Contato() {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
             className="bg-[#FDFCFB] rounded-[28px] p-[20px] border border-[#E8E3DD] shadow-[0_8px_30px_rgba(0,0,0,0.04)] h-full min-h-[500px] flex flex-col"
           >
-            <div className="flex-1 rounded-[20px] overflow-hidden border border-[rgba(0,0,0,0.04)]">
+            <div className="flex-1 rounded-[20px]h overflow-hidden border border-[rgba(0,0,0,0.04)]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.411130635415!2d-47.403889!3d-22.563722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8805cfd2a3d3b%3A0x8e8b8b8b8b8b8b8b!2sR.%20Carlos%20Gomes%2C%20575%20-%20Centro%2C%20Limeira%20-%20SP%2C%2013480-010!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
                 className="w-full h-full border-none min-h-[380px] grayscale-[10%] contrast-[1.05]"
