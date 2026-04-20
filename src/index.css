@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-principal: #2C2C2C;
+  --color-secundaria: #B8986A;
+  --color-destaque: #8C7252;
+  --color-fundo: #FAFAF8;
+  --color-fundo-alt: #F2EFE9;
+  --color-texto: #1E1E1E;
+  --color-texto-suave: #6A6A6A;
+  --color-texto-discreto: #ADADAD;
+  --color-branco: #FFFFFF;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans font-light text-texto bg-fundo antialiased overflow-x-hidden;
+  }
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.servico-card {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 38 38'%3E%3Cpath d='M19 4 C14 4 9.5 7 8.5 11.5 C7.5 15 8 18 8.5 20.5 C9.5 25 10 28 9.5 31 C9.2 33 10 35 11.8 35 C13.5 35 14.2 33 14.8 31 C15.3 29 16 26.5 19 26.5 C22 26.5 22.7 29 23.2 31 C23.8 33 24.5 35 26.2 35 C28 35 28.8 33 28.5 31 C28 28 28.5 25 29.5 20.5 C30 18 30.5 15 29.5 11.5 C28.5 7 24 4 19 4Z' fill='%23ffffff' stroke='%23B8986A' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E") 19 35, pointer;
+}
